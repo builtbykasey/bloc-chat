@@ -1,0 +1,37 @@
+.col-md-12 .header h1 {
+    text-align: center;
+    color: darkslategray;
+}
+
+.col-md-12 .header h4 {
+    text-align: center;
+    color: slategray;
+}
+
+.col-md-12 .header {
+    padding: 5px;
+    background-color: lightblue;
+}
+
+.col-md-12 .header {
+    border-bottom-style: solid;
+    border-bottom-color: slategray;
+}
+
+.col-sm-3 {
+    background-color: lightblue;
+    height: 1000px;
+}
+
+.col-sm-3 .header {
+    border-bottom-style: none;
+}
+
+.col-sm-3 .header h3 {
+    color: darkslategray;
+}
+
+.col-sm-3 .chatrooms p {
+    color: slategray;
+    padding-left: 10px;
+}

@@ -6,6 +6,9 @@
     
         return {
             all: rooms   
+        //    rooms.$add({
+        //        name: "newRoom"
+        //    })
         };
     
     }

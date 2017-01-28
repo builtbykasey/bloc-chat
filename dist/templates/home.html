@@ -1,12 +1,33 @@
-<section class="home-title">
-    
-    <h1>Bloc Chat</h1>
-    
-</section>
-    
-<section class="rooms-list">
-    <div class="chatrooms">
-        <p ng-repeat="rooms in home.chatRooms"> {{ rooms.name }} </p>
+<div class="col-md-12">
+    <div class="header">
+        <h1>Bloc Chat</h1>
+        <h4>Bloc's Front End Chatrooms</h4>
     </div>
-</section>
     
+    <div class="col-sm-3">
+        <!--Sidebar content//--> 
+                    
+        <div class="header">
+        
+            <h3>Chatrooms</h3>
+            
+        <!--    <div class="new-chat-room">
+                
+                <button type="button" class="btn btn-default" ng-click="???">New Room</button>
+            
+            </div>
+        -->
+        
+        </div>
+        
+        <div class="chatrooms">
+        
+            <p ng-repeat="rooms in home.chatRooms"> {{ rooms.name }} </p>
+            </div>
+
+        </div>
+        
+        <div class="col-sm-9">
+            Body content
+        </div>
+</div>

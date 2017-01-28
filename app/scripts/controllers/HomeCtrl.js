@@ -1,4 +1,4 @@
-(function() {
+(function () {
     function HomeCtrl(Room) {
     
         this.chatRooms = Room.all;
@@ -10,8 +10,3 @@
         .controller('HomeCtrl', ['Room', HomeCtrl]);
     
 })();
-
-
-
-
- 
