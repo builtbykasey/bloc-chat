@@ -3,16 +3,16 @@
     
         $scope.chatRooms = Room.all;
         
-        this.open = function () {
-
-            $uibModal.open({
-                animation: true, 
-                templateUrl: '/templates/modal.html',
+        this.open = function() {
+            var modalInstance = $uibModal.open({
+                templateUrl: 'modal.html',
                 controller: 'ModalCtrl',
-                size: 'sm', 
+                size: 'sm'
             });
             
         };
+        
+        
         
     }
     
