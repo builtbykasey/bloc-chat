@@ -1,11 +1,9 @@
 (function() {
     function ModalCtrl($scope, $uibModalInstance){
-        $scope.newRoom = {};
-        
-        $scope.newRoom.name = "";
+        $scope.newRoom = {name: ''};
         
         $scope.ok = function(){
-            $uibModalInstance.close($scope.text);
+            $uibModalInstance.close($scope.newRoom);
         };
 
         $scope.cancel = function() {

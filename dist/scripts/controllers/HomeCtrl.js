@@ -9,12 +9,9 @@
                 controller: 'ModalCtrl',
             });
             
-            $scope.modalInstance.result.then(function (selectedItem) {
-                this.selected = selectedItem;
-                this.roomService.addRoom(selectedItem);
-            }, function () {
-            $log.info('Modal dismissed at: ' + new Date());
-            });
+            modalInstance.result.then(function(name) {
+				Room.addRoom(name);
+			});
             
         };
         

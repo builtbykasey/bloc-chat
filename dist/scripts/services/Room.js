@@ -11,7 +11,7 @@
 
             // add a new room
             addRoom: function (name) {
-                rooms.$add({ name: "newRoom" });
+                rooms.$add(name);
 		      }
         };
     
