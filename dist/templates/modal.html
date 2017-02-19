@@ -1,14 +1,15 @@
 <div class="modal-header">
-    <h3 class="modal-title" id="modal-title">I'm a modal!</h3>
+    <h3>Create new room</h3>
 </div>
 
-<div class="modal-body" id="modal-body">
-modal body
-</div>
+<div class="modal-body">
+    <div class="form-group">
+        <input type="text" placeholder="Enter a room name" class="form-control" ng-model="newRoom.name">
+    </div>
 
-<!--
+</div>
 <div class="modal-footer">
-    <button class="btn btn-primary" type="button" ng-click="???">OK</button>
-    <button class="btn btn-warning" type="button" ng-click="???">Cancel</button>
+    
+    <button class="btn btn-primary" type="button" ng-click="ok()">Create</button>
+    <button class="btn btn-primary" type="button" ng-click="cancel()">Cancel</button>
 </div>
--->

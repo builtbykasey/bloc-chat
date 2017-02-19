@@ -3,11 +3,17 @@
     
         $scope.chatRooms = Room.all;
         
-        this.open = function() {
+        $scope.open = function() {
             var modalInstance = $uibModal.open({
-                templateUrl: 'modal.html',
+                templateUrl: '/templates/modal.html',
                 controller: 'ModalCtrl',
-                size: 'sm'
+            });
+            
+            $scope.modalInstance.result.then(function (selectedItem) {
+                this.selected = selectedItem;
+                this.roomService.addRoom(selectedItem);
+            }, function () {
+            $log.info('Modal dismissed at: ' + new Date());
             });
             
         };

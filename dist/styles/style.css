@@ -10,7 +10,7 @@
 
 .col-md-12 .header {
     padding: 5px;
-    background-color: lightblue;
+    background-color: deepskyblue;
 }
 
 .col-md-12 .header {
@@ -19,7 +19,7 @@
 }
 
 .col-sm-3 {
-    background-color: lightblue;
+    background-color: deepskyblue;
     height: 1000px;
 }
 
@@ -34,4 +34,8 @@
 .col-sm-3 .chatrooms p {
     color: slategray;
     padding-left: 10px;
+}
+
+.new-chat-room {
+    padding-bottom: 15px;
 }

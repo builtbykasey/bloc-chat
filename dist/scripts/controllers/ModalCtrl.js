@@ -1,12 +1,19 @@
-//just to see if it would work
 (function() {
-    function ModalCtrl($scope, $uibModalInstance, Room) {
-        $scope.rooms = Room;
+    function ModalCtrl($scope, $uibModalInstance){
+        $scope.newRoom = {};
         
+        $scope.newRoom.name = "";
         
+        $scope.ok = function(){
+            $uibModalInstance.close($scope.text);
+        };
+
+        $scope.cancel = function() {
+            $uibModalInstance.dismiss('cancel');
+        }
     }
-    
+
     angular
         .module('blocChat')
-        .controller('ModalCtrl', ['$scope', '$uibModalInstance', 'Room', ModalCtrl]);
+        .controller('ModalCtrl', ['$scope', '$uibModalInstance', ModalCtrl])
 })();
