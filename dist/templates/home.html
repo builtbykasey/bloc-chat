@@ -22,12 +22,25 @@
         
         <div class="chatrooms">
         
-            <p ng-repeat="rooms in chatRooms"> {{ rooms.name }} </p>
+            <div ng-repeat="rooms in chatRooms"> 
+                
+                <a ng-click="setRoom(rooms)"> {{ rooms.name }} </a>
+            
             </div>
+            
+        </div>
 
         </div>
         
         <div class="col-sm-9">
-            Body content
+                        
+            <h3> {{ currentRoom.name }} </h3>
+                        
+            <div class="messages">
+            
+            
+            
+            </div>
+            
         </div>
 </div>

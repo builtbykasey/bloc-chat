@@ -2,6 +2,7 @@
     function HomeCtrl($scope, $uibModal, Room) {
     
         $scope.chatRooms = Room.all;
+        $scope.currentRoom = null;
         
         $scope.open = function() {
             var modalInstance = $uibModal.open({
@@ -15,6 +16,11 @@
             
         };
         
+        $scope.setRoom = function(rooms) {
+            $scope.currentRoom = rooms;
+            
+            
+        };
         
         
     }
