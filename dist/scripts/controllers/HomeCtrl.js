@@ -1,5 +1,5 @@
 (function () {
-    function HomeCtrl($scope, $uibModal, Room, Message) {
+    function HomeCtrl($scope, $uibModal, Room, Message, $cookes) {
     
         $scope.chatRooms = Room.all;
         $scope.currentRoom = null;
@@ -9,6 +9,10 @@
             $scope.currentRoom = room;
             $scope.listMessages = Message.all;  
             console.log("test");
+        };
+        
+        $scope.sendMessage = function(newMessage) {
+            Message.send(newMessage, $scope.currentRoom.$id);
         };
         
         $scope.open = function() {
@@ -30,6 +34,6 @@
     
     angular
         .module('blocChat')
-        .controller('HomeCtrl', ['$scope', '$uibModal', 'Room', 'Message', HomeCtrl]);
+        .controller('HomeCtrl', ['$scope', '$uibModal', 'Room', 'Message', '$cookies', HomeCtrl]);
     
 })();
