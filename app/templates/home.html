@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="col-md-12">
+    <div class="col-md-12" id="document">
         <div class="header">
             <h1>Bloc Chat</h1>
             <h4>Bloc's Front End Chatrooms</h4>
@@ -33,7 +33,7 @@
 
             </div>
 
-        <div class="col-sm-9">
+        <div class="col-sm-9" id="messages">
 
             <div class="room-name">
 
@@ -44,7 +44,7 @@
             <div class="messages">
 
                 <ul>
-                    <li ng-repeat="messages in listMessages"> <strong>{{ messages.username }}</strong>: {{ messages.content }}
+                    <li ng-repeat="messages in listMessages"> <strong>{{ messages.username }}</strong> <br> {{ messages.content }}
 
                     </li>
                 </ul>
