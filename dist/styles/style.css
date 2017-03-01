@@ -1,3 +1,19 @@
+html, body {
+    margin: 0;
+}
+
+.container {
+    padding: 0;
+    margin: 0;
+    width: 100.5%;
+    overflow-x: hidden;
+}
+
+.col-md-12 {
+    margin: 0;
+    overflow-x: hidden;
+}
+
 .col-md-12 .header h1 {
     text-align: center;
     color: darkslategray;
@@ -10,7 +26,7 @@
 
 .col-md-12 .header {
     padding: 5px;
-    background-color: deepskyblue;
+    background-color: #bce4ff;
 }
 
 .col-md-12 .header {
@@ -19,7 +35,7 @@
 }
 
 .col-sm-3 {
-    background-color: deepskyblue;
+    background-color: #bce4ff;
     height: 1000px;
 }
 
@@ -31,15 +47,44 @@
     color: darkslategray;
 }
 
-.col-sm-3 .chatrooms p {
-    color: slategray;
-    padding-left: 10px;
-}
-
 .new-chat-room {
     padding-bottom: 15px;
 }
 
+.chatrooms-list {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 a {
     cursor: pointer;
+    color: darkslategray;
+    font-size: 18px;    
+}
+
+.room-name {
+    color: slategray;
+}
+
+.messages {
+    color: darkslategray;
+}
+
+ul, li {
+    list-style-type: none;
+    list-style-position: inside;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    background: #e5f4ff;
+
+}
+
+li:nth-child(even) {
+    background: white;
 }
