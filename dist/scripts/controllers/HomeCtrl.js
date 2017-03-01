@@ -4,15 +4,20 @@
         $scope.chatRooms = Room.all;
         $scope.currentRoom = null;
         $scope.listMessages = null;
+        $scope.required = true;
 
         $scope.setRoom = function(room) {
             $scope.currentRoom = room;
-            $scope.listMessages = Message.all;  
+            $scope.listMessages = Message.getByRoomId(room.$id);  
             console.log("test");
         };
         
         $scope.sendMessage = function(newMessage) {
-            Message.send(newMessage, $scope.currentRoom.$id);
+            if (newMessage) {
+                Message.send(newMessage, $scope.currentRoom.$id);
+                $scope.newMessage = "";
+            }
+            
         };
         
         $scope.open = function() {
