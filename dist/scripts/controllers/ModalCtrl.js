@@ -1,7 +1,7 @@
 (function() {
     function ModalCtrl($scope, $uibModalInstance){
         $scope.newRoom = {name: ''};
-        
+
         $scope.ok = function(){
             $uibModalInstance.close($scope.newRoom);
         };

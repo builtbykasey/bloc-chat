@@ -1,6 +1,17 @@
-<div class="modal-body" id="modal-body">
-  <h4>Set a username</h4>
-  <p>This name will appear when you send messages</p>
-  <input type="text" ng-model="username" ><br/>
-  <button type="button" ng-click="createUser()">Set username</button>
+
+
+<div class="modal-header">
+    <h3>Set a username</h3>
+    <p>This name will appear when you send messages</p>
+</div>
+
+<div class="modal-body">
+    <div class="form-group">
+        <input type="text" class="form-control" ng-model="username">
+    </div>
+
+</div>
+<div class="modal-footer">
+
+    <button class="btn btn-primary" type="button" ng-click="createUser()">Set Username</button>
 </div>
