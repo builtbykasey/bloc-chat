@@ -9,44 +9,20 @@ html, body {
     overflow-x: hidden;
 }
 
-.col-md-12#document {
-    margin: 0;
-    overflow-x: hidden;
-    padding: 0;
-    margin: 0;
-}
-
-.col-md-12 .header h1 {
-    text-align: center;
-    color: darkslategray;
-}
-
-.col-md-12 .header h4 {
-    text-align: center;
-    color: slategray;
-}
-
-.col-md-12 .header {
-    padding: 5px;
-    background-color: #bce4ff;
-}
-
-.col-md-12 .header {
-    border-bottom-style: solid;
-    border-bottom-color: slategray;
-}
-
-.col-sm-3 {
-    background-color: #bce4ff;
+.sidebar {
+    background-color: #4d394b;
     height: 1000px;
+    color: #fff;
+    padding: 1rem 3rem;
 }
 
-.col-sm-3 .header {
-    border-bottom-style: none;
+.sidebar-channels {
+    /*margin-bottom: 1rem;*/
 }
 
-.col-sm-3 .header h3 {
-    color: darkslategray;
+.sidebar-channels h3 {
+    color: #ab9ba9;
+    text-transform: uppercase;
 }
 
 .new-chat-room {
@@ -58,39 +34,41 @@ html, body {
     padding-bottom: 5px;
 }
 
-a {
+.chatrooms-list a {
     cursor: pointer;
-    color: darkslategray;
-    font-size: 18px;    
+    color: #ab9ba9;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.chatrooms-list a:hover {
+    color: #fff;
 }
 
 .room-name {
-    color: slategray;
-    margin-left: 10px;
-}
-
-.col-sm-9#messages {
-    padding: 0;
-    margin: 0;
+    color: #000;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
 }
 
 .messages {
-    color: darkslategray;
+    padding: 0;
+    margin: 0;
+    color: #000;
 }
 
-ul, li {
+.messages ul {
     list-style-type: none;
     list-style-position: inside;
     margin-left: 0;
     padding-left: 0;
 }
 
-li {
+.messages li {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 25px;
-    background: #e5f4ff;
-
+    background: #e9e2e9;
 }
 
 li:nth-child(even) {
