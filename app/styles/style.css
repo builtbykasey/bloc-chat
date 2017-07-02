@@ -16,10 +16,6 @@ html, body {
     padding: 1rem 3rem;
 }
 
-.sidebar-channels {
-    /*margin-bottom: 1rem;*/
-}
-
 .sidebar-channels h3 {
     color: #ab9ba9;
     text-transform: uppercase;

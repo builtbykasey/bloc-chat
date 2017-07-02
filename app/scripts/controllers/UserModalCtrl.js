@@ -9,7 +9,7 @@
                 $uibModalInstance.close();
             }
         };
-  }
+    }
 
     angular
         .module('blocChat')
